@@ -1,0 +1,30 @@
+.main-container{
+    width: 90%;
+    margin: auto;
+}
+
+.main-container li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.fatto{
+    border: 1px solid black;
+}
+
+.input-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.fatto2{
+    text-decoration-line: line-through; 
+    color: red;
+}
+
+.bottoni{
+    display: flex;
+}
