@@ -25,9 +25,10 @@ new Vue ({
                 })
             },
 
-            elFatto: function () {
-                this.lista.done === true
+            elFatto: function (i) {
+                this.lista[i].done === true
                 console.log("funziona")
+                console.log(i)
             },
 
             cancella: function (i) {
