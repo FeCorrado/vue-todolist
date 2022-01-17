@@ -8,7 +8,7 @@ new Vue ({
             },
             {
                 text:'studiare', 
-                done: true
+                done: false
             },
             {
                 text:'palestra', 
@@ -21,14 +21,16 @@ new Vue ({
             aggiungi: function(){
                 this.lista.push({
                     text: this.newTodo,
-                    done: false
+                    done: false,
                 })
+                
             },
 
             elFatto: function (i) {
-                this.lista[i].done === true
-                console.log("funziona")
-                console.log(i)
+                if (this.lista[i].done === true) {
+                    this.lista[i].done = false
+                }else{this.lista[i].done = true
+                }
             },
 
             cancella: function (i) {

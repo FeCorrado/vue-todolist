@@ -20,7 +20,7 @@
             <li v-for="(item, i) in lista" :class=" lista[i].done === true ? 'fatto2' : 'da-fare' ">
                 {{item.text}}
                 <div class="bottoni">
-                    <div @click="elFatto" class="fatto">Fatto</div>
+                    <div @click="elFatto (i)" class="fatto">Fatto</div>
                     <div @click="cancella">x</div>
                 </div>
             </li>
